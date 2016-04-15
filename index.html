@@ -1,0 +1,389 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>primera aplicacion</title>
+
+<link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
+	<script type="text/javascript" src="slider/engine1/jquery.js"></script>
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/temasapp1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/leyenda2.jpg','imagenes/erupcion.jpg','imagenes/ceniza.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>POPOCATEPETL</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="slider/data1/images/popocatepetl1.jpg" alt="popocatepetl1" title="popocatepetl1" id="wows1_0"/></li>
+<li><img src="slider/data1/images/popocatepetl2.jpg" alt="popocatepetl2" title="popocatepetl2" id="wows1_1"/></li>
+<li><img src="slider/data1/images/popocatepetl3.jpg" alt="popocatepetl3" title="popocatepetl3" id="wows1_2"/></li>
+<li><img src="slider/data1/images/popocatepetl4.jpg" alt="popocatepetl4" title="popocatepetl4" id="wows1_3"/></li>
+<li><img src="slider/data1/images/popocatepetl5.jpg" alt="popocatepetl5" title="popocatepetl5" id="wows1_4"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="popocatepetl1"><img src="slider/data1/tooltips/popocatepetl1.jpg" alt="popocatepetl1"/>1</a>
+<a href="#" title="popocatepetl2"><img src="slider/data1/tooltips/popocatepetl2.jpg" alt="popocatepetl2"/>2</a>
+<a href="#" title="popocatepetl3"><img src="slider/data1/tooltips/popocatepetl3.jpg" alt="popocatepetl3"/>3</a>
+<a href="#" title="popocatepetl4"><img src="slider/data1/tooltips/popocatepetl4.jpg" alt="popocatepetl4"/>4</a>
+<a href="#" title="popocatepetl5"><img src="slider/data1/tooltips/popocatepetl5.jpg" alt="popocatepetl5"/>5</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Responsive Slideshow</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="slider/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="slider/engine1/script.js"></script>
+    	<p>
+        El Popocatépetl (en náhuatl: popocatepetl, "el cerro que humea""popoca, humear; tepetl, cerro") es un volcán activo localizado en el centro de México
+        </p>
+        
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>DATOS GENERALES</h1>
+           <div>
+           <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina1a" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    	<h2>UBICACIÓN</h2>
+    	<p>Se muestra la ubicación del volcan</p>
+    	</a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina2a" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>TAMAÑO</h2>
+        <p>Cual es la altura aproximada que alcanza el volcan</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina3a" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>ANTIGUEDAD</h2>
+        <p>Edad aproximada del volcan</p>
+        </a>
+    </li>
+    </ul>
+               </div>
+        <div>
+         <center><img src="imagenes/popocatepetl2.jpg" width="45%" height="50%"></div></center>
+        </div>
+        </div>
+        
+<div>
+
+	
+	<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    	<h2>LEYENDA DE ORIGEN</h2>
+    	<p>se muestra la leyenda más famosa sobre el origen del volcan</p>
+    	</a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>ACTIVIDAD VOLCANICA</h2>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>que hacer en caso de una ertupción</h2>
+        <p>Pasos a seguir cuando haga una erupción</p>
+        </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>que hacer en caso de ceniza</h2>
+        <p>Pasos a seguir cuando caiga ceniza volcanica</p>
+        </a>
+    </li>
+    </ul>
+</div>
+	
+    
+    
+	
+<div data-role="footer" align="center" data-position="fixed" data-theme="a">
+	<div>
+    	<img src="imagenes/popocatepetl4.jpg" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Daniel Alberto Calderón Pérez</h4>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>LEYENDA</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+   	<p>
+    Hace ya miles de años, cuando el Imperio Azteca estaba en su esplendor y dominaba el Valle de México, como práctica común sometían a los pueblos vecinos, requiriéndoles un tributo obligatorio. Fue entonces cuando el cacique de los Tlaxcaltecas, acérrimos enemigos de los Aztecas, cansado de esta terrible opresión, decidió luchar por la libertad de su pueblo.
+
+El cacique tenía una hija, llamada Iztaccíhuatl, era la princesa más bella y depositó su amor en el joven Popocatépetl, uno de los más apuestos guerreros de su pueblo.
+
+Ambos se profesaban un inmenso amor, por lo que antes de partir a la guerra, Popocatépetl pidió al cacique la mano de la princesa Iztaccíhuatl. El padre accedió gustoso y prometió recibirlo con una gran celebración para darle la mano de su hija si regresaba victorioso de la batalla.
+
+El valiente guerrero aceptó, se preparó para partir y guardó en su corazón la promesa de que la princesa lo esperaría para consumar su amor.
+
+Al poco tiempo, un rival de amores de Popocatépetl, celoso del amor de ambos se profesaban, le dijo a la princesa Iztaccíhuatl que su amado había muerto durante el combate.
+
+Abatida por la tristeza y sin saber que todo era mentira, la princesa murió.
+
+Tiempo después, Popocatépetl regresó victorioso a su pueblo, con la esperanza de ver a su amada. A su llegada, recibió la terrible noticia sobre el fallecimiento de la princesa Iztaccíhuatl.
+
+Entristecido con la noticia, vagó por las calles durante varios días y noches, hasta que decidió hacer algo para honrar su amor y que el recuerdo de la princesa permaneciera en la memoria de los pueblos.
+
+Mandó construir una gran tumba ante el Sol, amontonando 10 cerros para formar una enorme montaña.
+
+ 
+Tomó entre sus brazos el cuerpo de su princesa, lo llevó a la cima y lo recostó inerte sobre la gran montaña.  El joven guerrero le dio un beso póstumo, tomó una antorcha humeante y se arrodilló frente a su amada, para velar así, su sueño eterno.
+Desde aquel entonces permanecen juntos, uno frente a otro. Con el tiempo la nieve cubrió sus cuerpos, convirtiéndose en dos enormes volcanes que seguirán así hasta el final del mundo.
+
+La leyenda añade, que cuando el guerrero Popocatépetl se acuerda de su amada, su corazón que guarda el fuego de la pasión eterna, tiembla y su antorcha echa humo.   Por ello hasta hoy en día, el volcán Popocatépetl continúa arrojando fumarolas.</p>
+   	<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/leyenda2.jpg',1)"><img src="imagenes/leyenda.jpg" width="295" height="171" id="Image18"></a></p>
+    
+   </div>
+   </div>
+   <div data-role="footer" data-theme="a">
+   	<h4>Aplicacion Uno, DACP</h4>
+    </div>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>ACTIVIDAD VOLCANICA</h1>
+    </div>
+    <div data-role="content" align="center">
+    	<div>
+        	<p>
+            El Popocatépetl ha sido uno de los volcanes más activos de México. Desde 1354 se han registrado 18 erupciones. En 1947 ocurrió una erupción de consideración, para iniciar así un periodo de actividad. Después, el 21 de diciembre de 1994 registró una explosión que produjo gas y cenizas que fueron transportados por los vientos dominantes a más de 25 km de distancia. Actualmente su actividad es moderada, pero constante, con emisión de fumarolas, compuestas de gases y vapor de agua, y repentinas e imprevistas expulsiones menores de ceniza y material volcánico. La última erupción violenta del volcán se registró en diciembre de 2000, lo que, siguiendo las predicciones de científicos, motivó la evacuación de miles de personas en las áreas cercanas al volcán. El 25 de diciembre de 2005 se produjo en el cráter del volcán una nueva explosión, que provocó una columna de humo y cenizas de tres kilómetros de altura y la expulsión de lava. Posteriormente en la mañana del 3 de junio de 2011, el Popocatépetl volvió a emitir grandes fumarolas sin causar daños. El 20 de noviembre de 2011 tuvo lugar una gran explosión que hizo temblar la tierra, escuchándose en las poblaciones cercanas a las laderas, pero sin mayor alteración. El volcán registró la mañana del 16 de enero de 2012 una fumarola de vapor de agua y ceniza, sin que esto represente riesgos para la población aledaña al coloso.
+
+El 16 de abril de 2012 el CENAPRED (Centro Nacional Para la Prevención de desastres), elevó el semáforo de alerta volcánica de fase amarillo 2 a fase amarillo 3 debido a la gran actividad que se ha estado presentando, sin que hasta el momento represente un peligro grave para la sociedad.
+
+A las 3:23 del 30 de abril de 2013, el volcán Popocatépetl arrojó fragmentos incandescentes a 800 metros del cráter sobre la ladera noreste, informó el Centro Nacional de Prevención de Desastres (CENAPRED).
+
+El 12 de mayo de 2013, luego del fuerte estruendo que se sintió en la localidad de Atlixco, la Coordinación Nacional de Protección Civil de la Secretaría de Gobernación, informó un cambio en el semáforo de la alerta volcánica, de amarillo fase 2 a fase 3 debido al incremento en la actividad del Volcán , por lo que entró en acción el Plan Operativo Popocatépetl, A través de un comunicado, la SEGOB dio a conocer que en una reunión con el Comité Científico Asesor, en el Centro Nacional de Prevención de Desastres (CENAPRED), que debido a que las dos semanas anteriores se observaron explosiones, eventos vulcano-tectónicos, episodios de tremor y trenes de exhalaciones, el Comité concluyó por consenso, emitir la recomendación. Sin embargo el 2 de junio de 2013 el CENAPRED regresó el nivel de alerta a Amarillo fase 2.
+
+Los días 17 y 18 de junio el volcán registró varios eventos explosivos de mayor magnitud, registrando Fumarolas que alcanzaron los 4 km sobre el nivel del cráter y expulsiones de roca incandescente que alcanzaron las faldas en el lado Sur-Oeste del coloso. La alerta se mantuvo en Amarillo Fase 2.
+
+El volcán entró en actividad el 7 de julio de 2013, lanzando ceniza claramente visible en poblaciones cercanas, la ceniza también alcanzó la Ciudad de México, expulsando flujos piroclásticos e incandescencia. El semáforo volcánico se sitúa en amarillo fase 3.
+            </p>
+            <img src="imagenes/riesgo.jpg" width="50%" height="50%">
+            </div>
+        </div>
+    <div data-role="footer" data-theme="a">
+    	<h4>Aplicacion Uno, DACP</h4>
+    </div>
+    </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>QUE HACER EN CASO DE ERUPCION</h1>
+    </div>
+    <div data-role="content" align="center">
+    	<div>
+        	<p>
+            Antes de una erupción volcánica
+
+
+    Lo primero que necesitamos, sea cual sea el desastre, es un kit de emergencia. Es posible que tengamos que sobrevivir sin ayuda después del fenómeno, lo cual significa que necesitaremos comida, agua y otros suministros en cantidad suficiente para resistir al menos tres días. Los cuerpos de emergencia acudirán a ayudarle, pero no pueden alcanzar a todo el mundo al mismo tiempo. Un kit de emergencia es una colección de artículos básicos que pueden ser necesarios en caso de desastre. Como no sabemos dónde vamos a estar cuando ocurra una emergencia, necesitamos preparar kits para casa, trabajo y vehículos.
+
+
+    El kit de emergencia de casa debería incluir comida, agua y suministros para al menos tres días. Hay que tenerlo preparado por si debemos salir de casa rápidamente y asegurarnos de que todos los miembros de la familia saben dónde está. El kit del trabajo con agua y comida debería estar siempre listo para cogerlo e irnos en caso de evacuación. Es conveniente llevar un kit de emergencias (con comida, agua, botiquín de primeros auxilios, etc.) también en el coche por si nos quedamos atrapados.
+
+El kit básico debe contener:
+
+Comida no perecedera en cantidad suficiente para tres días
+Agua en cantidad suficiente para tres días
+Radio o televisión portátil a pilas y pilas de repuesto
+Linterna
+Botiquín de primeros auxilios
+Artículos de higiene (toallitas húmedas y papel higiénico)
+Cerillas y recipiente impermeable
+Silbato
+Ropas de repuesto
+Accesorios de cocina y utensilios para cocinar, incluyendo un abrelatas
+Fotocopias del carnet de identidad y las tarjetas de crédito
+Dinero en efectivo
+Artículos que respondan a necesidades especiales como recetas médicas, gafas, lentillas, etc.
+Suministros para niños, como pañales.
+En caso de vivir en una zona muy fría, debemos tener en cuenta que quizá no encontremos calor, así que debemos incluir una muda completa de ropa y zapatos por persona, incluyendo abrigos, bufandas, guantes, etc.
+Un par de gafas y mascarillas desechables para cada miembro de la familia
+    Lo mejor es que nos mantengamos alejados de la zonas volcánicas, pero si vivimos cerca de un volcán, activo o no, debemos estar preparados para la evacuación en el momento que nos avisen de ello.
+
+
+
+Durante una erupción volcánica
+
+
+Si un volcán entra en erupción en su zona:
+
+Proceda inmediatamente a la evacuación para evitar los escombros volantes, gases calientes, explosiones laterales y corrientes de lava.
+Tenga cuidado con los flujos de lodo. El daño que estos flujos pueden provocar aumenta con las lluvias persistentes y se mueven con más rápido de lo que nosotros podemos andar o correr. Mire corriente arriba cuando vaya a cruzar un puente y nunca lo cruce si se aproxima un flujo de lodo. 
+Use ropa que le cubra todo el cuerpo para proteger la piel
+Use gafas y mascarilla o un paño húmedo para facilitar la respiración
+Si se queda atrapado dentro de su hogar:
+
+Cierre ventanas, puertas y toda abertura al exterior
+Asegúrese de que los animales se encuentran bajo un refugio cubierto
+Si se queda atrapado en el exterior:
+
+Busque refugio bajo techo
+Evite áreas bajas donde los flujos de lodo pueden ser más peligrosos
+
+
+
+Después de una erupción volcánica
+
+Manténgase alejado de la ceniza volcánica
+No conduzca a través de ella, daña los vehículos
+Si tuvo que evacuar su hogar y al volver encuentra ladrones saqueándolo, no se enfrente a ellos. Pida ayuda.
+Hierva el agua que vaya a beber.
+Encienda la radio o televisión de su kit de emergencias para obtener noticias y posibles instrucciones
+Si padece alguna dolencia respiratoria, no salga de su hogar hasta que se confirme que no hay riesgo.
+Limpie la ceniza de los techos, puesto que pesa y puede provocar derrumbes
+Revise con precaución si funcionan luz, agua, gas y teléfono
+Ayude a las personas heridas o que han quedado atrapadas. Pida ayuda a los servicios de emergencia.
+            </p>
+        	<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/erupcion.jpg',1)"><img src="imagenes/popocatepetl2.jpg" width="284" height="177" id="Image19"></a></p>
+            
+            </div>
+        </div>
+    <div data-role="footer" data-theme="a">
+    	<h4>Aplicacion Uno, DACP</h4>
+    </div>
+    </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>QUE HACER EN CASO DE CENIZA</h1>
+    </div>
+    <div data-role="content" align="center">
+    	<div>
+        	<p>
+            La ceniza volcánica es roca pulverizada. La combinación de gases ácidos y ceniza puede darse a varios kilómetros de la erupción y causar daño pulmonar a niños, ancianos y enfermos.
+
+
+
+No se asuste, las cenizas son más molestas que dañinas
+Permanezca en el interior. Si se encuentra en el exterior, busque refugio y use mascarilla o pañuelo para protegerse del polvo. No existe riesgo de  gases tóxicos a pesar del olor. 
+A menos que sea algo verdaderamente urgente, no utilice el teléfono.
+Encienda la radio y procure informarse
+ 
+En el hogar:
+
+Cubra toda abertura el exterior
+Coloque toallas húmedas donde haya corrientes de aire,  así como en los umbrales de las puertas
+No encienda ventiladores ni secadoras de ropa
+Quite la ceniza de los canales y techos para evitar acumulaciones
+Si la fuente de agua tiene un sabor u olor ácido, utilice la almacenada en el calentador o en el tanque del inodoro. Para purificar el agua debe hervirla.
+No existe peligro alguno en comer verduras y frutas del jardín, siempre y cuando las lave primero
+No use jabón, se impregna de ceniza; use detergente en su lugar
+En su automóvil:
+
+No conduza a menos que sea absolutamente necesario
+Si tiene que hacerlo, hágalo despacio. La ceniza reduce la visibilidad, así que mantenga una distancia de seguridad adecuada con el coche que va delante de usted.
+Si el automóvil se para, sáquelo de la carretera para evitar accidentes y manténgase en el interior.
+            </p>
+        	<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/ceniza.jpg',1)"><img src="imagenes/popocatepetl3.jpg" width="271" height="186" id="Image"></a></p>
+            </div>
+        </div>
+    <div data-role="footer" data-position="fixed" data-theme="a">
+    	<h4>Aplicacion Uno, DACP</h4>
+    </div>
+    </div>
+</div>
+
+
+<!--jhdsgfshbdf-->
+<div data-role="page" id="Pagina1a" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>UBICACION</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+   	<p>
+    Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.
+    </p>
+    <img src="imagenes/ubicacion.jpg" width="50%" height="50%">
+   </div>
+   </div>
+   <div data-role="footer" data-position="fixed" data-theme="a">
+   	<h4>Aplicacion Uno, DACP</h4>
+    </div>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina2a" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>TAMAÑO</h1>
+    </div>
+    <div data-role="content" align="center">
+    	<div>
+        	<P>
+            Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.
+            </P>
+            <img src="imagenes/altura.gif" width="50%" height="50%">
+            </div>
+        </div>
+    <div data-role="footer" data-position="fixed" data-theme="a">
+    	<h4>Aplicacion Uno, DACP</h4>
+    </div>
+    </div>
+</div>
+
+<div data-role="page" id="Pagina3a" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>ANTIGÜEDAD</h1>
+    </div>
+    <div data-role="content" align="center">
+    	<div>
+        	<P>
+            El Popocatépetl es un estratovolcán, y los estudios paleomagnéticos que se han hecho de él indican que tiene una edad aproximada de 730 000 años.
+            </P>
+            <img src="imagenes/popocatepetl1.jpg" width="50%" height="50%">
+            </div>
+        </div>
+    <div data-role="footer" data-position="fixed" data-theme="a">
+    	<h4>Aplicacion Uno, DACP</h4>
+    </div>
+    </div>
+</div>
+</body>
+</html>
